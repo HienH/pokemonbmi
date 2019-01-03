@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="front.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab:700" rel="stylesheet">
+
+    <title>BMI calculator </title>
+    <link rel="icon" type="image/gif/png" href="pokeball.jpg">
+
+  </head>
+  <body>
+  <div class= "outside">
+  <div class= "boarder">
+      <section class=Titlepage>
+        <div class="container col-sm-12">
+                <!--<div class="row">
+                    <div class="col-lg-5 text-right img2 style="width: 100%; height: 80%"">-->
+                        <img  class="poke col-sm-12" height= 60% width= 75%  src="Pokemon.jpg" class=troll></img>
+                 
+                   <!-- <div class="col-lg-7 title">-->
+                         <h1 class=" text-center tittle col-sm-12"> BMI Calculator </h1>
+                 
+                </div>
+        </section>
+        <section class= "container text-center " >
+          <!--  <div class="row">
+                <div class="col-md-8 input-group mb-3">-->
+                 <p class="title1 text-center">Find the Pokemon with the same BMI as you!</p>
+ 
+                <form class="calculator">
+                  <p class= "cal">Please enter your details </p>
+                <label class= "cal">Weight <input type = "text" name="Weight" id=weight>
+                (KG)
+                </label>
+                <br>
+                <br>
+                <label  class= "cal">Height <input type = "text" name="Height" id=height>
+                (CM)
+                </label>
+                <br>
+                
+                <button type ="button" class="go btn btn-danger" name="calculate BMI" onClick="BMIcalc()">GO</button>
+
+                <!--<input type ="button" name="calculate BMI" value= "BMI" onClick="BMIcalc()"/> 
+                <button type="button" class="btn btn-dark">Dark</button> -->
+                
+                </form>
+        </section>
+        
+      </div>
+
+      <!--Modal-->
+      <div class="modal fade" id="#myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+        
+              <h4 class="modal-title">Bulbasaur</h4>      
+              </div>
+              <div class="modal-body">
+                  <img style="width: 100%; height: 100%"  src="bulbasaur.jpg" class=troll></img>
+  
+                <p>Species:	Seed Pokémon<br>
+                    Type: Grass<br>
+                    Height:	2′04″ (0.7 m)<br>
+                    Weight:	15.2 lbs (6.9 kg)</p>
+  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="#myModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+          
+                <h4 class="modal-title">Clefairy</h4>      
+                </div>
+                <div class="modal-body">
+                    <img style="width: 100%; height: 100%"  src="clefairy.jpg" class=troll></img>
+    
+                  <p>Species: Fairy Pokémon<br>
+                      Type: Fairy<br>
+                      Height:	2′00″ (0.6 m)<br>
+                      Weight:	16.5 lbs (7.5 kg)</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal fade" id="#myModal3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Gengar</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="gengar.jpg" class=troll></img>
+      
+                    <p>Species: Shadow Pokémon<br>
+                        Type: Poison<br>
+                        Height:	4′11″ (1.5 m)<br>
+                        Weight:	89.3 lbs (40.5 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Jynx</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="jynx.jpg" class=troll></img>
+      
+                    <p>Species: Human Shape Pokémon<br>
+                        Type: Ice<br>
+                        Height:	4′07″ (1.4 m)<br>
+                        Weight:	89.5 lbs (40.6 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal5">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Charmander</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="charmander.jpg" class=troll></img>
+      
+                    <p>Species: Lizard Pokémon<br>
+                        Type: Fire<br>
+                        Height:	2′00″ (0.6 m))<br>
+                        Weight:	18.7 lbs (8.5 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal6">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Slowpoke</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="slowpoke.jpg" class=troll></img>
+      
+                    <p>Species: Dopey Pokémon<br>
+                        Type: Water <br>
+                        Height:	3′11″ (1.2 m)<br>
+                        Weight:	79.4 lbs (36.0 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal7">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Meowth</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="meowth.jpg" class=troll></img>
+      
+                    <p>Species: Cat Pokémon<br>
+                        Type: Normal<br>
+                        Height:	1′04″ (0.4 m)<br>
+                        Weight:	9.3 lbs (4.2 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="modal fade" id="#myModal8">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Vulpix</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="vulpix.jpg" class=troll></img>
+      
+                    <p>Species: Fox Pokémon<br>
+                        Type: Fire<br>
+                        Height:	2′00″ (0.6 m)<br>
+                        Weight:	21.8 lbs (9.9 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal fade" id="#myModal81">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Chansey</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="chansey.jpg" class=troll></img>
+      
+                    <p>Species: Egg Pokémon<br>
+                        Type: Normal<br>
+                        Height:	3′07″ (1.1 m)<br>
+                        Weight:	76.3 lbs (34.6 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal9">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Psyduck</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="psyduck.jpg" class=troll></img>
+      
+                    <p>Species: Duck Pokémon<br>
+                        Type: Watwe<br>
+                        Height:	2′07″ (0.8 m)<br>
+                        Weight:	43.2 lbs (19.6 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal10">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Primeape</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="primeape.jpg" class=troll></img>
+      
+                    <p>Species: Pig Monkeey Pokémon<br>
+                        Type: Fighting<br>
+                        Height:	3′03″ (1.0 m)<br>
+                        Weight:	70.5 lbs (32.0 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modal fade" id="#myModal11">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Poliwag</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="poliwag.jpg" class=troll></img>
+      
+                    <p>Species: Tadpole Pokémon<br>
+                        Type: Water<br>
+                        Height:	2′00″ (0.6 m)<br>
+                        Weight:	27.3 lbs (12.4 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal12">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Lapras</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="lapras.jpg" class=troll></img>
+      
+                    <p>Species: Transport Pokémon<br>
+                        Type: Water<br>
+                        Height:	8′02″ (2.5 m)<br>
+                        Weight:	485.0 lbs (220.0 kg))</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="#myModal13">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+            
+                  <h4 class="modal-title">Pikachu</h4>      
+                  </div>
+                  <div class="modal-body">
+                      <img style="width: 100%; height: 100%"  src="pikachu.jpg" class=troll></img>
+      
+                    <p>Species: Mouse Pokémon<br>
+                        Type: Electric<br>
+                        Height:	1′04″ (0.4 m)<br>
+                        Weight:	13.2 lbs (6.0 kg)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--     <div class="modal fade" id="#myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+      
+              </button>
+              <h4 class="modal-title">Modal title</h4>
+              <p>fejgbrjk </p>
+      
+            </div>
+            <div class="modal-body">
+              <p>Please enter all values in the fields.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div> -->
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+     <!-- </div>
+      <div class="modal fade" id="#myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+      
+            <h4 class="modal-title">Pidgeotto</h4>      
+            </div>
+            <div class="modal-body">
+                <img style="width: 100%; height: 100%"  src="Pidgeotto.jpg" class=troll></img>
+
+              <p>Species:	Bird Pokémon<br>
+                  Type:Flying<br>
+                  Height:	3′07″ (1.1 m)<br>
+                  Weight:	66.1 lbs (30.0 kg)</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div> -->
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+   <!--   </div>
+<div class="modal fade" id="#myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+      
+            <h4 class="modal-title">Pidgeotto</h4>      
+            </div>
+            <div class="modal-body">
+                <img style="width: 100%; height: 100%"  src="Pidgeotto.jpg" class=troll></img>
+
+              <p>Species:	Bird Pokémon<br>
+                  Type:Flying<br>
+                  Height:	3′07″ (1.1 m)<br>
+                  Weight:	66.1 lbs (30.0 kg)</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="blah.js"></script>
+
+</body>
+
+</html>
